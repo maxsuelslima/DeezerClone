@@ -18,12 +18,15 @@
     "nookies": "^2.5.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "react-slick": "^0.28.1",
+    "rerousel": "^0.1.9"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/node": "17.0.17",
     "@types/react": "17.0.39",
+    "@types/react-slick": "^0.23.8",
     "eslint": "8.9.0",
     "eslint-config-next": "12.0.10",
     "typescript": "4.5.5"
