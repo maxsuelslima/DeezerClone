@@ -9,14 +9,15 @@ export default class MyDocument extends Document{
                     <link rel="preconnect" href="https://fonts.googleapis.com"/>
                     <link rel="preconnect" href="https://fonts.gstatic.com"/>
                     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+                    <div id="dz-root"></div>
+                    <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js">
+                    {`DZ.init({
+		                    appId:'528602',
+		                    channelUrl :'http://localhost:3000/channel.html'
+	                });`}
+                    </script>
                 </Head>
-                <Script
-        src="https://connect.facebook.net/en_US/sdk.js"
-        strategy="lazyOnload"
-        onLoad={() =>
-          console.log(`script loaded correctly, window.FB has been populated`)
-        }
-      />
+                
                 <body>
                     <Main/>
                     <NextScript>
@@ -25,4 +26,5 @@ export default class MyDocument extends Document{
             </Html>
          );
      }
+    
 }

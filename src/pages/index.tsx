@@ -7,35 +7,12 @@ import ContentBox from '../components/ContentBox'
 import { Head, NextScript } from 'next/document'
 import Script from 'next/script'
 import { useState } from 'react'
-const Home: NextPage = (data) => (  
-  <>
+import { deezerApi } from '../../service/deezerApi'
+import HomePage from '../components/HomePage'
 
-    <Flex>
-      <SideBar />
-      <Flex w="100%" direction="column">
-        <SearchBar/>
-        <ContentBox props={data}/>
-        <Player/> 
-      </Flex>
-    </Flex>
-  </>
-
+const Home: NextPage = (data) => (
+  <HomePage/>
 )
-export async function deezerFetcher(){
-  const res =await fetch('https://api.deezer.com/album/302127')
-  const data = await res.json()
-  console.log(data)
-  if (!data) {
-      return {
-        notFound: true,
-      }
-    }
-  
-    return {
-      props: {data}, 
-    }
-  }
-
 
 export default Home
 

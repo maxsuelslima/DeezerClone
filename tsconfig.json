@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/lib/init-middleware.js", "src/pages/api/cors.js", "src/components/ContentBox/index.jsx"],
   "exclude": ["node_modules"]
 }
