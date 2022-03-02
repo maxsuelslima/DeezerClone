@@ -44,11 +44,11 @@ export default function ContentBox() {
                     </Box>
                     </Link>
                 </ChakraLink>
-                <Flex flexWrap='nowrap' flexGrow={1} flexBasis={1}> 
+                <Flex overflowX="auto" > 
                       {charts.map((resp)=>{
                         return(
                         <ChakraLink>
-                            <Link href={`/`}><Box display="block">{resp.id}<Image rounded="2%" boxSize="234px" src="https://e-cdns-images.dzcdn.net/images/playlist/096be3005f0c050bf1a707d596697bf3/264x264-000000-80-0-0.jpg"/></Box>
+                            <Link href={`/`}><Box>{resp.id}<Image rounded="2%" boxSize="234px" src="https://e-cdns-images.dzcdn.net/images/playlist/096be3005f0c050bf1a707d596697bf3/264x264-000000-80-0-0.jpg"/></Box>
                             </Link>
                         </ChakraLink>
                         )
