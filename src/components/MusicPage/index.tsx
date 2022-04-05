@@ -4,20 +4,15 @@ import Player from "../Player/Player";
 import SearchBar from "../SearchBar";
 import SideBar from "../SideBar";
 
-const HomePage=()=>{
+const MusicPage=()=>{
     return(
         <Box>  
         <Flex direction="column" >
-          <Flex>
-            <SideBar />
-              <Flex overflowX="hidden" direction="column">
-                <SearchBar/>
-                <ContentBox/>
-              </Flex>
-          </Flex>
-            <Player/> 
+          <>
+            <ContentBox/>
+          </>
         </Flex>
       </Box>
     )
 }
-export default HomePage;
+export default MusicPage;

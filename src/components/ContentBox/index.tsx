@@ -35,7 +35,7 @@ export default function ContentBox() {
 
 
     return(<>
-        <Box mt="56px" h="100%" w="100%" bg='gray.500' borderBottom="1px" borderColor="gray.200" maxW="100%" > 
+        <Box w="100%" bg='gray.500' borderColor="gray.200"> 
             <Box w="100%" px="48px" overflow="hidden">
                 <ChakraLink>
                     <Link href={`/teste`}>

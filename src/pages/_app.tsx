@@ -1,15 +1,22 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { Box, ChakraProvider, Flex, HStack, Stack } from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
-import { NextScript } from 'next/document'
-import Script from 'next/script'
+import Player from '../components/Player/Player'
+import SearchBar from '../components/SearchBar'
+import SideBar from '../components/SideBar'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return(
     <>
-
-    <ChakraProvider>
-      <Component {...pageProps} />
-    </ChakraProvider>
+      <ChakraProvider>
+        <Flex flexShrink={1}>
+          <SideBar/>
+          <Flex flexDir="column">
+            <SearchBar/>
+            <Component {...pageProps} />
+            <Player/>
+          </Flex>
+        </Flex>
+      </ChakraProvider>
     </>
   )
 }
